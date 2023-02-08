@@ -2,7 +2,7 @@ const csv = require('csv-parser');
 const fs = require('fs');
 
 const csvFileLoader = async (path) => {
-    return await new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
         const content = [];
         try {
             fs.createReadStream(path)
